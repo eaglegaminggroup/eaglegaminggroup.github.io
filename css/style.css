@@ -1,0 +1,80 @@
+/* Styles go here */
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.footer-content {
+  margin-top: 20px;
+}
+
+/* Make compatible with fixed-to-top navbar */
+body > .container {
+  padding: 60px 15px 0;
+}
+
+/* End sticky footer styles
+-------------------------------------------------- */
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar {
+  margin: 0px;
+}
+
+.navbar-padding {
+  margin: 100px;
+}
+
+/* Make curved navbar tabs appear underneath navbar header (EGG link)
+   - Must use z-index with either opacity or positioning */
+
+/* .navbar-nav > li {
+  opacity: .99;
+  z-index: 1;
+  width: 105px;
+  margin-left: -20px;
+  text-align: right;
+}
+
+.navbar-header {
+  position: relative;
+  z-index: 2;
+} */
+
+/* --- */
+
+.table th:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+.dropdown-hover-arrow {
+  display: none;
+}
+
+.dropdown-menu > li:hover .dropdown-hover-arrow {
+  display: inline;
+}
