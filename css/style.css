@@ -78,3 +78,24 @@ body > .container {
 .dropdown-menu > li:hover .dropdown-hover-arrow {
   display: inline;
 }
+
+
+.panel-arcane {
+  background-color: #330066;
+  color: #fff;
+}
+
+.panel-healer {
+  background-color: #006600;
+  color: #fff;
+}
+
+.panel-thief {
+  background-color: #333333;
+  color: #fff;
+}
+
+.panel-warrior {
+  background-color: #003399;
+  color: #fff;
+}
