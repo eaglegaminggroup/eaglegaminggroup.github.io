@@ -113,3 +113,17 @@ body > .container {
 .post-date {
   margin-bottom: 30px;
 }
+
+.text-divider {
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #bbb;
+   line-height: 0.1em;
+   margin: 40px 0 40px;
+} 
+
+.text-divider span { 
+    background:#fff;
+    color: #bbb;
+    padding:0 10px;
+}
