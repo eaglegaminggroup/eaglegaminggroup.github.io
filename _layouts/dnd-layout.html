@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  <div class="page-header">
+    <h1>D&amp;D</h1>
+  </div>
+  
+  <ul class="nav nav-tabs">
+     <li role="presentation" {% if {{page.title}} contains 'Tables' %}class="active"{% endif %}><a href="{{site.github.url}}/dnd-tables.html">Tables</a></li>
+     <li role="presentation" {% if {{page.title}} contains 'Vault' %}class="active"{% endif %}><a href="{{site.github.url}}/dnd-vault.html">Vault</a></li>
+     <li role="presentation" {% if {{page.title}} contains 'Guilds' %}class="active"{% endif %}><a href="{{site.github.url}}/dnd-guilds.html">Guilds</a></li>
+     <li role="presentation" {% if {{page.title}} contains 'Sign Up' %}class="active"{% endif %}><a href="{{site.github.url}}/dnd-signup.html">Sign Up</a></li>
+     <li role="presentation" {% if {{page.title}} contains 'Resources' %}class="active"{% endif %}><a href="{{site.github.url}}/dnd-resources.html">Resources</a></li>
+  </ul>
+  <br>
+  
+  <div>
+     
+   {{content}}
+   
+  </div>
+  
+</div>

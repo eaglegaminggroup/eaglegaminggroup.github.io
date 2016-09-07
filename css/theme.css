@@ -32,6 +32,16 @@ h6,
   background-color: #ac1010;
 }
 
+.list-group-item-primary {
+  background-color: #801818;
+  color: #fff;
+}
+
+.badge.badge-primary {
+  color: #801818;
+  background-color: #fff;
+}
+
 .navbar-brand-text,
 .navbar-brand-image {
   vertical-align: bottom;
