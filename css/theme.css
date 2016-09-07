@@ -42,6 +42,11 @@ h6,
   background-color: #fff;
 }
 
+.alert.alert-primary {
+  background-color: #801818;
+  color: #fff;
+}
+
 .navbar-brand-text,
 .navbar-brand-image {
   vertical-align: bottom;

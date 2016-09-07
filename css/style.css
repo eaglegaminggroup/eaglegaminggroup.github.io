@@ -99,3 +99,17 @@ body > .container {
   background-color: #003399;
   color: #fff;
 }
+
+.media-contact {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .media-left {
+    display: none;
+  }
+}
+
+.post-date {
+  margin-bottom: 30px;
+}
