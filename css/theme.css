@@ -27,8 +27,16 @@ h6,
   background-color: #801818;
 }
 
+.btn-primary {
+  border-color: #000;
+}
+
 .primary:hover,
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary.active,
+.btn-primary:active:hover {
   background-color: #ac1010;
 }
 

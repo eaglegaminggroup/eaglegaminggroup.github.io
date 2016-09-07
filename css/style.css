@@ -127,3 +127,9 @@ body > .container {
     color: #bbb;
     padding:0 10px;
 }
+
+@media (min-width: 768px) {
+  .menu-group {
+    display: none;
+  }
+}
