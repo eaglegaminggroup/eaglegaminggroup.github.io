@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<div class="container">
+
+  <div class="page-header">
+    <h1>Board Games</h1>
+  </div>
+  
+  <ul class="nav nav-tabs">
+     <li role="presentation" {% if {{page.title}} contains 'Info' %}class="active"{% endif %}><a href="{{site.github.url}}/boardgames-info.html">Info</a></li>
+     <li role="presentation" {% if {{page.title}} contains 'Resources' %}class="active"{% endif %}><a href="{{site.github.url}}/boardgames-resources.html">Resources</a></li>
+  </ul>
+  <br>
+  
+  <div>
+     
+   {{content}}
+   
+  </div>
+  
+</div>

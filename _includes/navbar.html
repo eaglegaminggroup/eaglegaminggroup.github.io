@@ -14,13 +14,12 @@
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
+        <li {% if {{page.title}} contains 'Board' %}class="active"{% endif %}><a href="{{site.github.url}}/boardgames-info.html">Board Games</a></li>
         <li {% if {{page.title}} contains 'D&amp;D' %}class="active"{% endif %}><a href="{{site.github.url}}/dnd-tables.html">D&amp;D</a></li>
-        <li {% if {{page.title}} contains 'Board' %}class="active"{% endif %}><a href="{{site.github.url}}/boardgames.html">Board Games</a></li>
         <li {% if {{page.title}} contains 'Calendar' %}class="active"{% endif %}><a href="{{site.github.url}}/calendar.html">Calendar</a></li>
-        <li {% if {{page.title}} contains 'Resources' %}class="active"{% endif %}><a href="{{site.github.url}}/resources.html">Resources</a></li>
-        <li {% if {{page.title}} contains 'Sign' %}class="active"{% endif %}><a href="{{site.github.url}}/signup.html">Sign Up</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li {% if {{page.title}} contains 'FAQ' %}class="active"{% endif %}><a href="{{site.github.url}}/faq.html">FAQ</a></li>
         <li {% if {{page.title}} contains 'About' %}class="active"{% endif %}><a href="{{site.github.url}}/about.html">About</a></li>
       </ul>
     </div><!--/.nav-collapse -->

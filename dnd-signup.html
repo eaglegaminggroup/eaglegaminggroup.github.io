@@ -1,0 +1,82 @@
+---
+layout: dnd-layout
+title: D&amp;D Sign Up
+---
+
+<div class="alert alert-primary text-center" role="alert">If you are playing <strong>board games</strong>, you do <strong>NOT</strong> have to sign up.</div>
+
+<form class="form-horizontal">
+  
+  <div class="form-group">
+    <label class="col-md-2 control-label">I am a...</label>
+    <div class="col-md-10">
+      <div class="btn-group btn-group-justified" role="group" aria-label="...">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default active" id="signup-player">Player</button>
+        </div>
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-default" id="signup-dm">DM</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="form-group">
+    <label class="col-md-2 control-label">Your Name</label>
+    <div class="col-md-10">
+      <input type="text" class="form-control" placeholder="Your name...">
+    </div>
+  </div>
+
+  <div class="collapse in" id="form-collapse">
+    <div class="form-group">
+      <label class="col-md-2 control-label">Character Class</label>
+      <div class="col-md-10">
+        <input type="text" class="form-control" placeholder="Character class...">
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label class="col-md-2 control-label">Requested Party Members</label>
+      <div class="col-md-10">
+        <textarea class="form-control" rows="3" placeholder="Requested party members..."></textarea>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label class="col-md-2 control-label">Character Role</label>
+      <div class="col-md-10">
+        <select class="form-control">
+          <option>Select a role...</option>
+          <option>Tank</option>
+          <option>Melee Damage</option>
+          <option>Ranged Damage</option>
+          <option>Magical Damage</option>
+          <option>Magical Control</option>
+          <option>Healer</option>
+          <option>Support/Buff &amp; Debuff</option>
+        </select>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label class="col-md-2 control-label">Requested DM</label>
+      <div class="col-md-10">
+        <input type="text" class="form-control" placeholder="Requested DM...">
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <label class="col-md-2 control-label">Additional Information</label>
+      <div class="col-md-10">
+        <textarea class="form-control" rows="3" placeholder="Additional information..."></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-md-offset-2 col-md-10">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+</form>

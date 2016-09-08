@@ -99,3 +99,37 @@ body > .container {
   background-color: #003399;
   color: #fff;
 }
+
+.media-contact {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .media-left {
+    display: none;
+  }
+}
+
+.post-date {
+  margin-bottom: 30px;
+}
+
+.text-divider {
+   width: 100%;
+   text-align: center;
+   border-bottom: 1px solid #bbb;
+   line-height: 0.1em;
+   margin: 40px 0 40px;
+} 
+
+.text-divider span { 
+    background:#fff;
+    color: #bbb;
+    padding:0 10px;
+}
+
+@media (min-width: 768px) {
+  .menu-group {
+    display: none;
+  }
+}
