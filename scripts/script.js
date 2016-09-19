@@ -1,21 +1,26 @@
 // Code goes here
 
 $(document).ready(function() {
-  
-  // $('#calendar').fullCalendar({
-  //       header: {
-	// 			left: 'prev,next today',
-	// 			center: 'title',
-	// 			right: 'month,basicWeek,basicDay'
-	// 		}
-  // });
-  
+    
   $('#calendar').fullCalendar({
-        googleCalendarApiKey: 'AIzaSyClqptXueR8OxUDbzJj6l0DRvKLf0eQle4',
-        events: {
-            googleCalendarId: '1062258359464-ue4mc5hk6fqrbamjb25m8h2svn406pv8.apps.googleusercontent.com'
-        }
-    });
+    eventColor: '#801818',
+    handleWindowResize: true,
+    height: 'auto',
+    header: {
+				left: 'prev,next',
+				center: 'title',
+        right: 'today'
+			},
+    googleCalendarApiKey: 'AIzaSyClqptXueR8OxUDbzJj6l0DRvKLf0eQle4',
+    events: {
+        googleCalendarId: 'vni6ftgjath7hu5ssh62j0o8ck@group.calendar.google.com'
+    },
+    eventAfterAllRender: function() {
+      $('.fc-event').removeAttr('href');
+    }
+  });
+  
+  $('.fc-event').removeAttr('href');
   
   $('#signup-dm').click(function(){
     $('#form-collapse').collapse('hide');
@@ -30,7 +35,7 @@ $(document).ready(function() {
   });
   
   $('#reset-map').click(function() {
-    map.setCenter(church);
+    map.setCenter(gameHQ);
     map.setZoom(initialZoom);
   });
 
@@ -40,7 +45,7 @@ $(document).ready(function() {
 
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
-var church = new google.maps.LatLng(35.375862, -97.528037);
+var gameHQ = new google.maps.LatLng(35.375862, -97.528037);
 var initialZoom = 16;
 var map;
 
@@ -50,20 +55,20 @@ function initialize() {
 
   var mapOptions = {
     zoom: initialZoom,
-    center: church,
+    center: gameHQ,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     disableDefaultUI: true
   }
   map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
   var marker = new google.maps.Marker({
-      position: church,
+      position: gameHQ,
       map: map,
-      title: 'Bethany First Church of the Nazarene'
+      title: 'Game HQ'
   });
 
   google.maps.event.addListener(map, 'center_changed', function() {
-    if(map.getCenter() == church)
+    if(map.getCenter() == gameHQ)
     {
       $('#reset-map').addClass('disabled');
     }
