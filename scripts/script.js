@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 var directionsDisplay;
 var directionsService = new google.maps.DirectionsService();
-var church = new google.maps.LatLng(35.513238, -97.631599);
+var church = new google.maps.LatLng(35.375862, -97.528037);
 var initialZoom = 16;
 var map;
 
