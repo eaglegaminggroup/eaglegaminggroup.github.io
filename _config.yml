@@ -16,7 +16,10 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 # url: "http://yourdomain.com" the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll
-
+# Collections
+collections:
+  faq:
+    output: false
 # Build settings
 markdown: kramdown
 port: 4001

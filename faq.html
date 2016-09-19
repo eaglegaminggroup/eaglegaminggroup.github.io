@@ -8,69 +8,49 @@ title: FAQ
   <div class="page-header">
     <h1>FAQ</h1>
   </div>
+  
+  {% for q in site.faq %}
+  <div class="well">
+    <p><strong>Q: {{q.question}}</strong></p>
+    A: {{q.content}}
+  </div> 
+  {% endfor %}
+  <br>
+  <hr>
+  <br>
+  {% for q in site.faq %}
+  <div class="well">
+    <p><strong><span class="glyphicon glyphicon-question-sign"></span> {{q.question}}</strong></p>
+    {{q.content}}
+  </div> 
+  {% endfor %}
+  <br>
+  <hr>
+  <br>
+  {% for q in site.faq %}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title"><span class="glyphicon glyphicon-question-sign"></span> {{q.question}}</h4>
+    </div>
+    <div class="panel-body">
+      {{q.content}}
+    </div>
+  </div>
+  {% endfor %}
+<br>
+<hr>
+<br>
+  {% for q in site.faq %}
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">Q: {{q.question}}</h4>
+    </div>
+    <div class="panel-body">
+      A: {{q.content}}
+    </div>
+  </div>
+  {% endfor %}
     
-  <div class="well">
-    <p><strong>Q: Where does EGG meet?</strong></p>
-    A: On Oklahoma Christian University's campus, in the cafeteria.
-  </div>  
   
-  <div class="well">
-    <p><strong>Q: When does EGG meet?</strong></p>
-    A: Friday nights at 7:00pm.
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title"><span class="glyphicon glyphicon-question-sign"></span> Where do I sign up to play?</h4>
-    </div>
-    <div class="panel-body">
-      If you want to play board games, email <a href="{{site.github.url}}/about.html">Professor Smith</a>. If you want to play D&amp;D, fill out the <a href="dnd-signup.html">sign-up form</a>.
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title"><span class="glyphicon glyphicon-question-sign"></span> How do I get EGG email announcements?</h4>
-    </div>
-    <div class="panel-body">
-      Send an email to <a href="{{site.github.url}}/about.html">Camey Johnson</a>, <a href="{{site.github.url}}/about.html">Professor Smith</a>, or <a href="{{site.github.url}}/about.html">Corbin Murrow</a> and ask to be put on the EGG mailing list.
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title"><span class="glyphicon glyphicon-question-sign"></span> How do I stop getting EGG email announcements?</h4>
-    </div>
-    <div class="panel-body">
-      Send an email to <a href="{{site.github.url}}/about.html">Camey Johnson</a>, <a href="{{site.github.url}}/about.html">Professor Smith</a>, or <a href="{{site.github.url}}/about.html">Corbin Murrow</a> and ask to be taken off the EGG mailing list.
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">Q: What kinds of board games are at EGG?</h4>
-    </div>
-    <div class="panel-body">
-      A: You won't find board games like Monopoly, Scrabble, or Candy Land at EGG (unless you bring them, that is). Instead you'll find board games like Small World, Settlers of Catan, Terra Mystica, King of Tokyo, Trajan, and many more! For more information, see our <a href="{{site.github.url}}/boardgames-info.html">board game page</a> or feel free to email <a href="{{site.github.url}}/about.html">Professor Smith</a>.
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">Q: What edition of D&amp;D is played at EGG?</h4>
-    </div>
-    <div class="panel-body">
-      A: We currently play 5th Edition D&amp;D.
-    </div>
-  </div>
-  
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">Q: What do I need to bring?</h4>
-    </div>
-    <div class="panel-body">
-      A: If you're playing board games, you only need to bring yourself! You can bring your own board game if you'd like, just email <a href="{{site.github.url}}/about.html">Professor Smith</a> and let him know. If you're playing D&amp;D, you need to bring your character information and a pen or pencil. You'll also need dice and a miniature. These can either be borrowed each Friday night or you can purchase your own from <a href="{{site.github.url}}/dnd-resources.html">several different places</a>.
-    </div>
-  </div>
   
 </div>
