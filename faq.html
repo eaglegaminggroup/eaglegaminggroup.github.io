@@ -11,15 +11,6 @@ title: FAQ
   
   {% for q in site.faq %}
   <div class="well">
-    <p><strong>Q: {{q.question}}</strong></p>
-    A: {{q.content}}
-  </div> 
-  {% endfor %}
-  <br>
-  <hr>
-  <br>
-  {% for q in site.faq %}
-  <div class="well">
     <p><strong><span class="glyphicon glyphicon-question-sign"></span> {{q.question}}</strong></p>
     {{q.content}}
   </div> 
@@ -30,23 +21,10 @@ title: FAQ
   {% for q in site.faq %}
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h4 class="panel-title"><span class="glyphicon glyphicon-question-sign"></span> {{q.question}}</h4>
+      <span class="glyphicon glyphicon-question-sign"></span> {{q.question}}
     </div>
     <div class="panel-body">
       {{q.content}}
-    </div>
-  </div>
-  {% endfor %}
-<br>
-<hr>
-<br>
-  {% for q in site.faq %}
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">Q: {{q.question}}</h4>
-    </div>
-    <div class="panel-body">
-      A: {{q.content}}
     </div>
   </div>
   {% endfor %}

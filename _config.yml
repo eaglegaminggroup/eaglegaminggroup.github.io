@@ -20,6 +20,8 @@ github_username:  jekyll
 collections:
   faq:
     output: false
+  announcements:
+    output: true
 # Build settings
 markdown: kramdown
 port: 4001
