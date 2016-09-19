@@ -10,5 +10,10 @@ Local: http://localhost:4001/
 
 ---
 ## To Do:
-
-
+- Sign up tab for board games
+- Finish FAQ
+- Add directions to game HQ map
+- See if google forms can be embedded/customized
+- Get calendar api working (calendar)
+- Get sheets api working (tables)
+- Get gmail api working (announcements/home page)
