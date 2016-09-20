@@ -1,3 +1,13 @@
+<!-- Collapsing functionality for FAQ -->
+<div class="well">
+  <p class="faq-question" data-toggle="collapse" data-target="#faq-{{forloop.index0}}" style="cursor:pointer">
+    <strong><span class="glyphicon glyphicon-question-sign"></span> {{q.question}}</strong>
+  </p>
+  <div class="faq-answer collapse" id="faq-{{forloop.index0}}">{{q.content}}</div>
+</div>
+
+<!-- Old announcements -->
+
 <div class="panel panel-default">
     <div class="panel-body">
       <div class="post">
