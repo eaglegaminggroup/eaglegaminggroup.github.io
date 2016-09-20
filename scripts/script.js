@@ -22,6 +22,8 @@ $(document).ready(function() {
   
   $('.fc-event').removeAttr('href');
   
+  $('#authorize-button').click();
+  
   $('#signup-dm').click(function(){
     $('#form-collapse').collapse('hide');
     $(this).addClass('active');
