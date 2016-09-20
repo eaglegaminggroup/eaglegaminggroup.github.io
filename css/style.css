@@ -156,6 +156,8 @@ body > .container {
   }
 }
 
+/* Map styles */
+
 #reset-map {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
@@ -176,4 +178,72 @@ img.adp-marker {
   #map {
     height: 500px;
   }
+}
+
+/* Calendar custom styles */
+
+#calendar {
+  margin-bottom: 20px;
+}
+
+.fc-button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+}
+
+.fc-button:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+.fc-button:focus, 
+.fc-button:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.fc-button-group {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.fc-button-group > .fc-button:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.fc-button-group > .fc-button:first-child {
+    margin-left: 0;
+}
+.fc-button-group > .fc-button,
+.fc-button-group > .fc-button {
+    position: relative;
+    float: left;
+}
+
+.fc-button-group > .fc-button:last-child:not(:first-child),
+.fc-button-group > .dropdown-toggle:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
