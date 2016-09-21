@@ -1,5 +1,14 @@
 $(window).load( function(){
-  checkAuth();
+  var today = new Date();
+  var day = today.getDay();
+  var hour = today.getHours();
+  if(day === 4 && hour >= 17 || day === 5)
+  {
+    checkAuth();
+  }
+  else {
+    $('.tables-unavailable').removeClass('hidden');
+  }
 });
 
 var CLIENT_ID = '1062258359464-ue4mc5hk6fqrbamjb25m8h2svn406pv8.apps.googleusercontent.com';

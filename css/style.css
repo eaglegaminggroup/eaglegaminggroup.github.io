@@ -144,6 +144,17 @@ body > .container {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
   }
 }
+
+/* Tables styles */
+
+.tables-unavailable {
+  margin-top: 40px;
+  vertical-align: middle;
+  color: #bbb;
+  font-weight: bold;
+  font-size:18px;
+}
+
 /* ----------------------------------------------- */
 
 /* ???? --- */
