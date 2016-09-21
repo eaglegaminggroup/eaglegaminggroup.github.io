@@ -14,20 +14,9 @@ function checkAuth() {
     }, handleAuthResult);
 }
 
-function handleAuthClick(event) {
-  gapi.auth.authorize(
-    {client_id: CLIENT_ID, scope: SCOPES, immediate: false},
-    handleAuthResult);
-  return false;
-}
-
 function handleAuthResult(authResult) {
-  var authorizeDiv = document.getElementById('authorize-div');
   if (authResult && !authResult.error) {
-    authorizeDiv.style.display = 'none';
     loadSheetsApi();
-  } else {
-    authorizeDiv.style.display = 'inline';
   }
 }
 
@@ -55,17 +44,13 @@ function readTables() {
       for(i = 0; i< tablesList.length; i++)
       {
         var table = [];
-        //appendPre('\nRange ' + i + '\n');
         if(tablesList[i].values.length > 0)
         {
           for(j = 0; j < tablesList[i].values.length; j++)
           {
             var row = tablesList[i].values[j];
-            // Print columns A and E, which correspond to indices 0 and 4.
-            //appendPre(row[0] + ', ' + row[1]);
             if(row[0] !== undefined && row[0] !== 'Player')
             {
-              appendPre(row[0] + ', ' + row[1]);
               var player = {name: row[0], role: row[1]};
               table.push(player);
             }
@@ -105,10 +90,4 @@ function showTables() {
     output += '</div>';
   }
   $('#tables').append(output);
-}
-
-function appendPre(message) {
-  var pre = document.getElementById('output');
-  var textContent = document.createTextNode(message + '\n');
-  pre.appendChild(textContent);
 }
