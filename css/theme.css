@@ -1,5 +1,9 @@
 /* http://www.cssmatic.com/box-shadow */
 
+/* ----------------------------------------------- */
+/* Font styles
+-------------------------------------------------- */
+
 html,
 body,
 .body-font {
@@ -21,6 +25,10 @@ h6,
   font-family: 'Verdana', serif;
   vertical-align: 1px;
 }
+
+/* ----------------------------------------------- */
+/* Primary color styles
+-------------------------------------------------- */
 
 .primary,
 .btn-primary {
@@ -55,6 +63,10 @@ h6,
   color: #fff;
 }
 
+/* ----------------------------------------------- */
+/* Navbar styles
+-------------------------------------------------- */
+
 .navbar-brand-text,
 .navbar-brand-image {
   vertical-align: bottom;
@@ -84,29 +96,6 @@ h6,
   color: #fff;
 }
 
-/* .navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .open > a:focus,
-.navbar-default .navbar-nav > .open > a:hover {
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-.navbar-default .navbar-nav > li.active > a,
-.navbar-default .navbar-nav > li.active > a:focus,
-.navbar-default .navbar-nav > li.active > a:hover {
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-}
-
-.navbar-default .navbar-nav > .dropdown,
-.navbar-default .navbar-nav > .dropdown:hover {
-  background-color: #f8f8f8;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  z-index: 1;
-}
-
-.navbar-default .navbar-nav > li.active,
-.navbar-default .navbar-nav > li:hover {
-  z-index: 0;
-} */
+/* ----------------------------------------------- */
+/* ??? styles
+-------------------------------------------------- */

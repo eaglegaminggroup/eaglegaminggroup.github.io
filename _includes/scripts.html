@@ -1,9 +1,21 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+{% if {{page.title}} contains 'Calendar' %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.0.0/fullcalendar.min.js"></script>
 <script type='text/javascript' src='https://fullcalendar.io/js/fullcalendar-3.0.0/gcal.js'></script>
+<script type="text/javascript" src="{{site.github.url}}/scripts/calendar.js"></script>
+{% endif %}
+
+{% if {{page.title}} contains 'Resources' %}
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClqptXueR8OxUDbzJj6l0DRvKLf0eQle4"></script>
+<script type="text/javascript" src="{{site.github.url}}/scripts/map.js"></script>
+{% endif %}
+
+{% if {{page.title}} contains 'Tables' %}
 <script src="https://apis.google.com/js/client.js"></script>
 <script type="text/javascript" src="{{site.github.url}}/scripts/tables.js"></script>
+{% endif %}
+
 <script type="text/javascript" src="{{site.github.url}}/scripts/script.js"></script>

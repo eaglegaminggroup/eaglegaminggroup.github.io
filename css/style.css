@@ -1,5 +1,4 @@
-/* Styles go here */
-
+/* ----------------------------------------------- */
 /* Sticky footer styles
 -------------------------------------------------- */
 
@@ -32,13 +31,13 @@ body > .container {
   padding: 60px 15px 0;
 }
 
-/* End sticky footer styles
--------------------------------------------------- */
-
 .footer > .container {
   padding-right: 15px;
   padding-left: 15px;
 }
+/* ----------------------------------------------- */
+/* Navbar styles
+-------------------------------------------------- */
 
 .navbar {
   margin: 0px;
@@ -47,58 +46,9 @@ body > .container {
 .navbar-padding {
   margin: 100px;
 }
-
-/* Make curved navbar tabs appear underneath navbar header (EGG link)
-   - Must use z-index with either opacity or positioning */
-
-/* .navbar-nav > li {
-  opacity: .99;
-  z-index: 1;
-  width: 105px;
-  margin-left: -20px;
-  text-align: right;
-}
-
-.navbar-header {
-  position: relative;
-  z-index: 2;
-} */
-
-/* --- */
-
-.table th:hover {
-  background-color: #f5f5f5;
-  cursor: pointer;
-}
-
-.dropdown-hover-arrow {
-  display: none;
-}
-
-.dropdown-menu > li:hover .dropdown-hover-arrow {
-  display: inline;
-}
-
-
-.panel-arcane {
-  background-color: #330066;
-  color: #fff;
-}
-
-.panel-healer {
-  background-color: #006600;
-  color: #fff;
-}
-
-.panel-thief {
-  background-color: #333333;
-  color: #fff;
-}
-
-.panel-warrior {
-  background-color: #003399;
-  color: #fff;
-}
+/* ----------------------------------------------- */
+/* About styles
+-------------------------------------------------- */
 
 .media-contact {
   margin-bottom: 50px;
@@ -109,6 +59,11 @@ body > .container {
     display: none;
   }
 }
+/* ----------------------------------------------- */
+/* Announcements/Home styles
+-------------------------------------------------- */
+
+/*  styles */
 
 .post-date {
   margin-bottom: 30px;
@@ -133,6 +88,40 @@ body > .container {
     display: none;
   }
 }
+/* ----------------------------------------------- */
+/* D&D styles
+-------------------------------------------------- */
+
+/* Guild styles */
+
+.panel-arcane {
+  background-color: #330066;
+  color: #fff;
+}
+
+.panel-healer {
+  background-color: #006600;
+  color: #fff;
+}
+
+.panel-thief {
+  background-color: #333333;
+  color: #fff;
+}
+
+.panel-warrior {
+  background-color: #003399;
+  color: #fff;
+}
+
+/* Vault styles */
+
+.table th:hover {
+  background-color: #f5f5f5;
+  cursor: pointer;
+}
+
+/* Resources styles */
 
 @media (min-width: 768px) {
   .display-row {
@@ -155,95 +144,14 @@ body > .container {
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
   }
 }
+/* ----------------------------------------------- */
 
-/* Map styles */
+/* ???? --- */
 
-#reset-map {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-
-img.adp-marker {
-  margin: 5px;
+/*.dropdown-hover-arrow {
+  display: none;
 }
 
-#map {
-  width: 100%;
-  height: 300px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-@media (min-width: 768px) {
-  #map {
-    height: 500px;
-  }
-}
-
-/* Calendar custom styles */
-
-#calendar {
-  margin-bottom: 20px;
-}
-
-.fc-button {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-  touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
-}
-
-.fc-button:hover {
-    color: #333;
-    background-color: #e6e6e6;
-    border-color: #adadad;
-}
-.fc-button:focus, 
-.fc-button:hover {
-    color: #333;
-    text-decoration: none;
-}
-
-.fc-button-group {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.fc-button-group > .fc-button:first-child:not(:last-child):not(.dropdown-toggle) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-.fc-button-group > .fc-button:first-child {
-    margin-left: 0;
-}
-.fc-button-group > .fc-button,
-.fc-button-group > .fc-button {
-    position: relative;
-    float: left;
-}
-
-.fc-button-group > .fc-button:last-child:not(:first-child),
-.fc-button-group > .dropdown-toggle:not(:first-child) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
+.dropdown-menu > li:hover .dropdown-hover-arrow {
+  display: inline;
+}*/
