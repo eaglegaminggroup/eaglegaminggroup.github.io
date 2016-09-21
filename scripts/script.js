@@ -1,7 +1,7 @@
 // Code goes here
 
 $(document).ready(function() {
-    
+
   $('#calendar').fullCalendar({
     eventColor: '#801818',
     handleWindowResize: true,
@@ -19,30 +19,32 @@ $(document).ready(function() {
       $('.fc-event').removeAttr('href');
     }
   });
-  
+
   $('.fc-event').removeAttr('href');
-  
+
+  loadSheetsApi();
+
   $('#authorize-button').click();
-  
+
   $('#signup-dm').click(function(){
     $('#form-collapse').collapse('hide');
     $(this).addClass('active');
     $('#signup-player').removeClass('active');
   });
-  
+
   $('#signup-player').click(function(){
     $('#form-collapse').collapse('show');
     $(this).addClass('active');
     $('#signup-dm').removeClass('active');
   });
-  
+
   $('#reset-map').click(function() {
     map.setCenter(gameHQ);
     map.setZoom(initialZoom);
   });
 
-  initialize();  
-    
+  initialize();
+
 });
 
 var directionsDisplay;
