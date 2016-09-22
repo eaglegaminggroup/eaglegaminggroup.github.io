@@ -4,7 +4,8 @@ $(window).load( function(){
   var hour = today.getHours();
   if(day === 4 && hour >= 17 || day === 5)
   {
-    checkAuth();
+    //checkAuth();
+    gapi.load('client', init);
   }
   else {
     $('.tables-unavailable').removeClass('hidden');
@@ -14,22 +15,28 @@ $(window).load( function(){
 var CLIENT_ID = '1062258359464-ue4mc5hk6fqrbamjb25m8h2svn406pv8.apps.googleusercontent.com';
 var SCOPES = ["https://www.googleapis.com/auth/spreadsheets.readonly"];
 
-function checkAuth() {
-  gapi.auth.authorize(
-    {
-      'client_id': CLIENT_ID,
-      'scope': SCOPES.join(' '),
-      'immediate': true
-    }, handleAuthResult);
-}
+// function checkAuth() {
+//   gapi.auth.authorize(
+//     {
+//       'client_id': CLIENT_ID,
+//       'scope': SCOPES.join(' '),
+//       'immediate': true
+//     }, handleAuthResult);
+// }
+// 
+// function handleAuthResult(authResult) {
+//   if (authResult && !authResult.error) {
+//     loadSheetsApi();
+//   }
+// }
+// 
+// function loadSheetsApi() {
+//   var discoveryUrl = 'https://sheets.googleapis.com/$discovery/rest?version=v4';
+//   gapi.client.load(discoveryUrl).then(readTables);
+// }
 
-function handleAuthResult(authResult) {
-  if (authResult && !authResult.error) {
-    loadSheetsApi();
-  }
-}
-
-function loadSheetsApi() {
+function init() {
+  gapi.client.setApiKey('AIzaSyClqptXueR8OxUDbzJj6l0DRvKLf0eQle4');
   var discoveryUrl = 'https://sheets.googleapis.com/$discovery/rest?version=v4';
   gapi.client.load(discoveryUrl).then(readTables);
 }
