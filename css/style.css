@@ -83,6 +83,14 @@ body > .container {
     padding:0 10px;
 }
 
+.menu-group {
+  padding-bottom: 15px;
+}
+
+.menu-group .btn {
+  font-size: 80%;
+}
+
 @media (min-width: 768px) {
   .menu-group {
     display: none;
